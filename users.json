@@ -1,0 +1,28 @@
+{
+    "users": [
+      {
+          "id": 1,
+          "first_name": "Bryana",
+          "last_name": "Aleman",
+          "username": "baleman",
+          "email": "ba@gmail.com",
+          "password": "ba123"
+      },
+      {
+        "id": 2,
+        "first_name": "Lawrence",
+        "last_name": "Aleman",
+        "username": "laleman",
+        "email": "la@gmail.com",
+        "password": "la123"
+    },
+    {
+        "id": 3,
+        "first_name": "Ava",
+        "last_name": "Aleman",
+        "username": "aaleman",
+        "email": "aa@gmail.com",
+        "password": "aa123"
+    }
+    ]
+  }
