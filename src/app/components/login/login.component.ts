@@ -8,10 +8,18 @@ import { User } from 'src/app/models/user';
 })
 export class LoginComponent implements OnInit {
 
-  newUser: User = new User();
+  loginForm = {
+    username: "",
+    password: ""
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  login() {
+    console.log(this.loginForm);
   }
 
 }

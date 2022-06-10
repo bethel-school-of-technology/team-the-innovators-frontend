@@ -5,12 +5,12 @@
                 <div class="mb-3 text-center">
                     <h1>Log In Here!</h1>
                 </div>
-                <form> <!-- <form (ngSubmit) = "login()"> -->
+                <form (ngSubmit) = "login()">
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="username" name="username" placeholder="Username" [(ngModel)] = "newUser.username" />
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" [(ngModel)] = "loginForm.username" />
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" [(ngModel)] = "newUser.password" />
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" [(ngModel)] = "loginForm.password" />
                     </div>
                     <button class="mb-3 btn btn-primary" type="submit">Log In</button>
                     <div>Not a user? Sign up <a routerLink="">here</a></div>
