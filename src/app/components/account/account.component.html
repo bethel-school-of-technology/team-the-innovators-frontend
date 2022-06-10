@@ -1,1 +1,28 @@
-<p>account works!</p>
+<div class="container">
+    <div class="col-6">
+        <div id="info" class="row">
+            <div class="col-3">
+                <img src="https://prospectdirect.com/wpstagemct/wp-content/uploads/2017/05/generic-profile-photo-3.jpg"
+                    alt="Avatar" class="avatar" />
+                <div>Bio: {{ currentUser.bio }} </div>
+                <div>Username: {{ currentUser.username }} </div>
+                <div>Email: {{ currentUser.email }} </div>
+                <div>Password: {{ currentUser.password }} </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div id="posts" class="row">
+                    <div>Posts: {{ currentUser.posts }} </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div id="myHotspots" class="row">
+                    <div>My Hotspots: </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
