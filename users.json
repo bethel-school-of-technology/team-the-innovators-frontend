@@ -1,5 +1,21 @@
 {
-  "users": [
+    "users": [
+        {
+            "id": 1,
+            "first_name": "Noah",
+            "last_name": "Braswell",
+            "username": "NoahB",
+            "email": "noah@gmail.com",
+            "password": "password"
+        },
+        {
+            "id": 2,
+            "first_name": "Jim",
+            "last_name": "Johnson",
+            "username": "JimJ",
+            "email": "jim@gmail.com",
+            "password": "password"
+        },
     {
       "id": 1,
       "first_name": "Bryana",
