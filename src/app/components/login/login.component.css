@@ -8,7 +8,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #347deb;
+    background-image: linear-gradient(to bottom right, #347deb, whitesmoke);
 }
 
 a {
