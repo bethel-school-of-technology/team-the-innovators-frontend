@@ -1,51 +1,49 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "first_name": "Noah",
-            "last_name": "Braswell",
-            "username": "NoahB",
-            "email": "noah@gmail.com",
-            "password": "password"
-        },
-        {
-            "id": 2,
-            "first_name": "Jim",
-            "last_name": "Johnson",
-            "username": "JimJ",
-            "email": "jim@gmail.com",
-            "password": "password"
-        },
+  "users": [
     {
       "id": 1,
+      "first_name": "Noah",
+      "last_name": "Braswell",
+      "username": "NoahB",
+      "email": "noah@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "first_name": "Jim",
+      "last_name": "Johnson",
+      "username": "JimJ",
+      "email": "jim@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 3,
       "first_name": "Bryana",
       "last_name": "Aleman",
       "username": "baleman",
       "email": "ba@gmail.com",
       "password": "ba123",
       "Bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      "Posts": 
-        [
-          {
-            "postId": 1,
-            "postBody": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          },
-          {
-            "postId": 2,
-            "postBody": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
-          }
-        ]
+      "Posts": [
+        {
+          "postId": 1,
+          "postBody": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          "postId": 2,
+          "postBody": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        }
+      ]
     },
     {
-      "id": 2,
+      "id": 4,
       "first_name": "Lawrence",
       "last_name": "Aleman",
       "username": "laleman",
       "email": "la@gmail.com",
       "password": "la123",
       "Bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      "Posts": 
-      [
+      "Posts": [
         {
           "postId": 3,
           "postBody": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
@@ -55,18 +53,16 @@
           "postBody": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
         }
       ]
-
     },
     {
-      "id": 3,
+      "id": 5,
       "first_name": "Ava",
       "last_name": "Aleman",
       "username": "aaleman",
       "email": "aa@gmail.com",
       "password": "aa123",
       "Bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      "Posts": 
-      [
+      "Posts": [
         {
           "postId": 5,
           "postBody": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."

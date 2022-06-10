@@ -4,11 +4,11 @@
     border-radius: 50%;
   }
 
-div {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.container {
+    margin-left: 0px;
+    /* margin-right: 0px; */
 }
 
-.container {
-    margin: 0px;
+.col-sm {
+    margin-right: 25px;;
 }
