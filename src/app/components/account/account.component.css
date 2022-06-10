@@ -1,0 +1,14 @@
+.avatar {
+    width: 200px;
+    height: 175px;
+    border-radius: 50%;
+  }
+
+div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    margin: 0px;
+}
