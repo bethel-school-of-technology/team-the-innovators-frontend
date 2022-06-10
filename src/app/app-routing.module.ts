@@ -8,12 +8,12 @@ import { LoginComponent } from './components/login/login.component';
 const routes: Routes = [
   { path: "hotspots", component: HomeComponent},
   { path: "signup", component: SignupComponent},
+  //localhost:4200/
   { path: "", redirectTo: "hotspots", pathMatch: "full"},
   // localhost:4200/login
   { path: "login", component: LoginComponent },
   // localhost:4200/profile
   { path: "profile", component: AccountComponent },
-  // localhost:4200/
 ]
 
 @NgModule({
