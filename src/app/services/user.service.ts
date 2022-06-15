@@ -9,19 +9,19 @@ import { User } from '../models/user';
 export class UserService {
 
   constructor(private http: HttpClient) { }
-
+  
   myUserURL: string = "http://localhost:3000/users"
 
   //create a user
-
+  
   createUser(newUser: User): Observable<any> {
-    return this.http.post(this.myUserURL + "/" + "signup", newUser);
+    return this.http.post(this.myUserURL+"/"+"signup", newUser);
   }
-
+  
   //server request to login route
 
-  loginUser(username: string, password: string): Observable<any> {
-    return this.http.post(this.myUserURL + "/login", { username, password });
+  loginUser(username: string, password: string): Observable<any>{
+    return this.http.post(this.myUserURL+"/login", {username, password});
   }
 
   //server request to profile route
@@ -30,7 +30,7 @@ export class UserService {
     let myHeaders = {
       Authorization: localStorage.getItem('hotspotsAppToken')
     }
-    return this.http.get(this.myUserURL + '/profile', { headers: myHeaders });
+    return this.http.get(this.myUserURL+'/profile', {headers: myHeaders });
   }
-
+  
 }
