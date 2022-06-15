@@ -9,12 +9,12 @@ export class UserService {
 
   constructor(private Http: HttpClient) { }
 
-  serverUserURL: string = "http://localhost:3000/users"
+  myUserURL: string = "http://localhost:3000/users"
 
   //server request to login route
 
   loginUser(username: string, password: string): Observable<any>{
-    return this.Http.post(this.serverUserURL+"/login", {username, password});
+    return this.Http.post(this.myUserURL+"/login", {username, password});
   }
 
   //server request to profile route
@@ -23,7 +23,7 @@ export class UserService {
     let myHeaders = {
       Authorization: localStorage.getItem('hotspotsAppToken')
     }
-    return this.Http.get(this.serverUserURL+'/profile', {headers: myHeaders});
+    return this.Http.get(this.myUserURL+'/profile', {headers: myHeaders});
   }
 
 }
