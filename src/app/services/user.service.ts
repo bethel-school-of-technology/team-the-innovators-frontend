@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Contact } from 'users';
 import { User } from '../models/user';
 
 @Injectable({
@@ -9,13 +8,26 @@ import { User } from '../models/user';
 })
 export class UserService {
 
+  constructor(private http: HttpClient) { }
+  
   myUserURL: string = "http://localhost:3000/users"
 
-  constructor(private http: HttpClient) { }
-
   //create a user
-  createUser(newUser: User) : Observable<Contact> {
-    return this.http.post<Contact>(this.myUserURL, newUser)
+  
+  createUser(newUser: User): Observable<any> {
+    return this.http.post(this.myUserURL+"/"+"signup", newUser);
+  }
+  
+  //server request to login route
+
+  loginUser(username: string, password: string): Observable<any>{
+    return this.http.post(this.myUserURL+"/login", {username, password});
   }
 
-}
+  //server request to profile route
+
+  getUserProfile(): Observable<any> {
+    let myHeaders = {
+      Authorization: localStorage.getItem('hotspotsAppToken')
+    }
+    return this.http.get(this.myUserURL+'/profile', {headers: 

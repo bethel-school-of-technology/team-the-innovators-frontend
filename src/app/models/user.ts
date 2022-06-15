@@ -1,20 +1,20 @@
 export class User {
     id!: number;
-    first_name: string;
-    last_name: string;
-    username: string;
-    email: string;
-    password: string;
-    bio: string;
-    posts: string;
+    FirstName: string;
+    LastName: string;
+    Username: string;
+    Email: string;
+    Password: string;
+    Bio: string;
+    Reviews: string;
 
     constructor() {
-        this.first_name = "";
-        this.last_name = "";
-        this.username = "";
-        this.email = "";
-        this.password = "";
-        this.bio = "";
-        this.posts = "";
+        this.FirstName = "";
+        this.LastName = "";
+        this.Username = "";
+        this.Email = "";
+        this.Password = "";
+        this.Bio = "";
+        this.Reviews = "";
     }
 }

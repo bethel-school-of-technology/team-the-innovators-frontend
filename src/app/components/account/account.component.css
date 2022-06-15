@@ -4,11 +4,15 @@
     border-radius: 50%;
   }
 
-div {
-    margin-top: 5px;
-    margin-bottom: 5px;
+#profile-pic {
+    margin: 20px;
 }
 
-.container {
-    margin: 0px;
+.account-con {
+    margin: 10px;
+}
+
+.col-sm {
+    margin-top: 25px;
+    margin-left: 25px;
 }
