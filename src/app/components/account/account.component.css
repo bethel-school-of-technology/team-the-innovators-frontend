@@ -4,11 +4,15 @@
     border-radius: 50%;
   }
 
-.container {
-    margin-left: 0px;
-    /* margin-right: 0px; */
+#profile-pic {
+    margin: 20px;
+}
+
+.account-con {
+    margin: 10px;
 }
 
 .col-sm {
-    margin-right: 25px;;
+    margin-top: 25px;
+    margin-left: 25px;
 }
