@@ -30,4 +30,7 @@ export class UserService {
     let myHeaders = {
       Authorization: localStorage.getItem('hotspotsAppToken')
     }
-    return this.http.get(this.myUserURL+'/profile', {headers: 
+    return this.http.get(this.myUserURL+'/profile', {headers: myHeaders });
+  }
+  
+}
