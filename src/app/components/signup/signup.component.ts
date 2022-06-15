@@ -9,7 +9,6 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  //myContactService: any;
 
   newUser: User = new User();
 
@@ -21,7 +20,7 @@ export class SignupComponent implements OnInit {
   createNew(){
     this.myUserService.createUser(this.newUser).subscribe(response => {
       console.log(response)
-      this.router.navigate(["profile"])
+      this.router.navigate(["/login"]);
     })
   }
 
