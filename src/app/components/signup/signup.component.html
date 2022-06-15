@@ -1,21 +1,21 @@
 <body style="text-align: center;">
     <h1>Sign Up for Hotspots!</h1>
 <br>
-<form>
+<form (ngSubmit) = "createNew()">
     <label></label>
-    <input type="text" name="firstName" placeholder="First Name">
+    <input type="text" name="firstName" placeholder="First Name" [(ngModel)] = "newUser.first_name">
     <br><br>
     <label></label> 
-    <input type="text" name="lastName" placeholder="Last Name">
+    <input type="text" name="lastName" placeholder="Last Name" [(ngModel)] = "newUser.last_name">
     <br><br>
     <label></label>
-    <input type="text" name="Username" placeholder="Username">
+    <input type="text" name="Username" placeholder="Username" [(ngModel)] = "newUser.username">
     <br><br>
     <label></label>
-    <input type="text" name="Email" placeholder="Email">
+    <input type="text" name="Email" placeholder="Email" [(ngModel)] = "newUser.email">
     <br><br>
     <label></label>
-    <input type="text" name="Password" placeholder="Password">
+    <input type="text" name="Password" placeholder="Password" [(ngModel)] = "newUser.password">
     <br><br>
     <button type="submit">Create Account</button>
 </form>

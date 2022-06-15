@@ -72,6 +72,26 @@
           "postBody": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
         }
       ]
+    },
+    {
+      "first_name": "JIm",
+      "last_name": "Bob",
+      "username": "Jimbob",
+      "email": "jimbob@gmail.com",
+      "password": "jimbob",
+      "bio": "",
+      "posts": "",
+      "id": 6
+    },
+    {
+      "first_name": "bob",
+      "last_name": "bob",
+      "username": "bob",
+      "email": "bob@gmail.com",
+      "password": "bob",
+      "bio": "",
+      "posts": "",
+      "id": 7
     }
   ]
 }
