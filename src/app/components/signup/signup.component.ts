@@ -9,7 +9,6 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  //myContactService: any;
 
   newUser: User = new User();
 
