@@ -1,0 +1,27 @@
+
+<body style="text-align: center;">
+    <div class="card">
+    <h1>Sign Up for Hotspots!</h1>
+<br>
+
+<form (ngSubmit) = "createNew()">
+    <label></label>
+    <input type="text" name="firstName" placeholder="First Name" [(ngModel)] = "newUser.FirstName">
+    <br><br>
+    <label></label> 
+    <input type="text" name="lastName" placeholder="Last Name" [(ngModel)] = "newUser.LastName">
+    <br><br>
+    <label></label>
+    <input type="text" name="Username" placeholder="Username" [(ngModel)] = "newUser.Username">
+    <br><br>
+    <label></label>
+    <input type="text" name="Email" placeholder="Email" [(ngModel)] = "newUser.Email">
+    <br><br>
+    <label></label>
+    <input type="text" name="Password" placeholder="Password" [(ngModel)] = "newUser.Password">
+    <br><br>
+    <button class="mb-3 btn btn-primary" type="submit">Create Account</button>
+    <div>Already a user? Login <a routerLink="/login">here</a></div>
+</form>
+</div>
+</body>

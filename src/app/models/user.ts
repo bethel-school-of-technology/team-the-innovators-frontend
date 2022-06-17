@@ -1,8 +1,20 @@
 export class User {
-    id: number;
-    first_name: string;
-    last_name: string;
-    username: string;
-    email: string;
-    password: string;
+    id!: number;
+    FirstName: string;
+    LastName: string;
+    Username: string;
+    Email: string;
+    Password: string;
+    Bio: string;
+    Reviews: string;
+
+    constructor() {
+        this.FirstName = "";
+        this.LastName = "";
+        this.Username = "";
+        this.Email = "";
+        this.Password = "";
+        this.Bio = "";
+        this.Reviews = "";
+    }
 }

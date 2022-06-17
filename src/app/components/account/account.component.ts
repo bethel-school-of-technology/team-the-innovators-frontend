@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user';
+import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-account',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-  constructor() { }
+  currentUser: User = new User();
+
+  constructor(private UserService: UserService, private Router: Router) { }
 
   ngOnInit(): void {
+      this.UserService.getUserProfile().subscribe(myResponseObject => {
+        console.log(myResponseObject);
+        this.currentUser = myResponseObject.user;
+      })
   }
 
 }
