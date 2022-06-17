@@ -1,6 +1,9 @@
+
 <body style="text-align: center;">
+    <div class="card">
     <h1>Sign Up for Hotspots!</h1>
 <br>
+
 <form (ngSubmit) = "createNew()">
     <label></label>
     <input type="text" name="firstName" placeholder="First Name" [(ngModel)] = "newUser.FirstName">
@@ -17,6 +20,8 @@
     <label></label>
     <input type="text" name="Password" placeholder="Password" [(ngModel)] = "newUser.Password">
     <br><br>
-    <button type="submit">Create Account</button>
+    <button class="mb-3 btn btn-primary" type="submit">Create Account</button>
+    <div>Already a user? Login <a routerLink="/login">here</a></div>
 </form>
+</div>
 </body>
