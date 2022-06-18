@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
 import { AccountComponent } from './components/account/account.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { UserService } from './services/user.service';
 
@@ -18,7 +19,8 @@ import { UserService } from './services/user.service';
     HomeComponent,
     SignupComponent,
     LoginComponent,
-    AccountComponent
+    AccountComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

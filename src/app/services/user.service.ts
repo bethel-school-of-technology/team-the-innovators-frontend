@@ -32,5 +32,14 @@ export class UserService {
     }
     return this.http.get(this.myUserURL+'/profile', {headers: myHeaders });
   }
+
+  //server request to logout route
+
+  logoutUser(): Observable<any> {
+  let myHeaders = {
+    Authorization: localStorage.getItem('hotspotsAppToken')
+  }
+    return this.http.get(this.myUserURL+"/logout", {headers: myHeaders });
+  }
   
 }
