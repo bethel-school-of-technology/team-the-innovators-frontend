@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { AccountComponent } from './components/account/account.component';
 import { LoginComponent } from './components/login/login.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   { path: "hotspots", component: HomeComponent},
@@ -14,6 +15,8 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   // localhost:4200/profile
   { path: "profile", component: AccountComponent },
+  // localhost:4200/admin
+  { path: "admin", component: AdminComponent }
 ]
 
 @NgModule({

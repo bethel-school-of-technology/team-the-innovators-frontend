@@ -12,6 +12,7 @@ import { AccountComponent } from './components/account/account.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { UserService } from './services/user.service';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UserService } from './services/user.service';
     SignupComponent,
     LoginComponent,
     AccountComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

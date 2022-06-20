@@ -1,0 +1,18 @@
+.avatar {
+    width: 200px;
+    height: 175px;
+    border-radius: 50%;
+  }
+
+#profile-pic {
+    margin: 20px;
+}
+
+.account-con {
+    margin: 10px;
+}
+
+.col-sm {
+    margin-top: 25px;
+    margin-left: 25px;
+}
