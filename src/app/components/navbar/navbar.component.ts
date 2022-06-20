@@ -9,19 +9,16 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private UserService: UserService, private Router: Router) { }
+  constructor(private UserService: UserService) { }
 
   ngOnInit(): void {
-    this.UserService.logoutUser().subscribe(() => {
-      console.log('logout');
-    });
+
   }
 
   logout() {
     this.UserService.logoutUser().subscribe(() => {
       localStorage.removeItem('hotspotsAppToken')
       console.log('logout');
-      this.Router.navigate(['/login']);
     });
   }
   
