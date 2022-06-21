@@ -18,6 +18,9 @@ export class AccountComponent implements OnInit {
       this.UserService.getUserProfile().subscribe(myResponseObject => {
         console.log(myResponseObject);
         this.currentUser = myResponseObject.user;
+        if(myResponseObject.user.Admin) {
+          this.Router.navigate(['/admin']);
+        }
       })
   }
 
