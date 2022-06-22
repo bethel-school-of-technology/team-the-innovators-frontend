@@ -11,11 +11,17 @@
         <div class="col-sm">
             <div>
                 <h4>Users: </h4>
+                <div *ngFor="let user of allUsers">{{ user.Email }} 
+                    <button class="mb-3 btn btn-danger" type="submit">Delete User</button>
+                </div>
             </div>
         </div>
         <div class="col-sm">
             <div class="row">
                 <h4>Reviews: </h4>
+                <div *ngFor="let review of allReviews">{{ review.review_message }} 
+                    <button class="mb-3 btn btn-danger" type="submit">Delete Review</button>
+                </div>
             </div>
         </div>
     </div>

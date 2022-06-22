@@ -41,5 +41,23 @@ export class UserService {
   }
     return this.http.get(this.myUserURL+"/logout", {headers: myHeaders });
   }
+
+  //server request to admin view all users route
+
+  allUsers(): Observable<any> {
+    let myHeaders = {
+      Authorization: localStorage.getItem('hotspotsAppToken')
+    }
+      return this.http.get(this.myUserURL+"/admin/users", {headers: myHeaders });
+  }
+
+  //server request to admin view all users route
+
+  allReviews(): Observable<any> {
+    let myHeaders = {
+      Authorization: localStorage.getItem('hotspotsAppToken')
+    }
+      return this.http.get(this.myUserURL+"/admin/reviews", {headers: myHeaders });
+  }
   
 }
