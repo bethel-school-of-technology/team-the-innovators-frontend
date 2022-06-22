@@ -4,11 +4,11 @@ import { UserService } from 'src/app/services/user.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-account',
-  templateUrl: './account.component.html',
-  styleUrls: ['./account.component.css']
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.css']
 })
-export class AccountComponent implements OnInit {
+export class AdminComponent implements OnInit {
 
   currentUser: User = new User();
 
@@ -18,9 +18,6 @@ export class AccountComponent implements OnInit {
       this.UserService.getUserProfile().subscribe(myResponseObject => {
         console.log(myResponseObject);
         this.currentUser = myResponseObject.user;
-        if(myResponseObject.user.Admin) {
-          this.Router.navigate(['/admin']);
-        }
       })
   }
 
