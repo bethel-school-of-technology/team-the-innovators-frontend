@@ -1,7 +1,8 @@
 <div class="account-con">
     <div class="row account-row">
         <div class="col-sm">
-            <img id="profile-pic" src="https://prospectdirect.com/wpstagemct/wp-content/uploads/2017/05/generic-profile-photo-3.jpg"
+            <img id="profile-pic"
+                src="https://prospectdirect.com/wpstagemct/wp-content/uploads/2017/05/generic-profile-photo-3.jpg"
                 alt="Avatar" class="avatar" />
             <div class="mt-3 mb-3">First Name: {{ currentUser.FirstName }} </div>
             <div class="mt-3 mb-3">Last Name: {{ currentUser.LastName }} </div>
@@ -11,16 +12,35 @@
         <div class="col-sm">
             <div>
                 <h4>Users: </h4>
-                <div *ngFor="let user of allUsers">{{ user.Email }} 
-                    <button class="mb-3 btn btn-danger" type="submit">Delete User</button>
+                <div *ngFor="let user of allUsers">
+                    <table>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Username</th>
+                        </tr>
+                        <tr>
+                            <td>{{ user.FirstName }}</td>
+                            <td>{{ user.LastName }}</td>
+                            <td>{{ user.Username }}</td>
+                            <td>{{ user.Email }}</td>
+                        </tr>
+                    </table>
+                    <button class="mt-1 mb-3 btn btn-danger" type="submit">Delete User</button>
                 </div>
             </div>
         </div>
         <div class="col-sm">
             <div class="row">
                 <h4>Reviews: </h4>
-                <div *ngFor="let review of allReviews">{{ review.review_message }} 
-                    <button class="mb-3 btn btn-danger" type="submit">Delete Review</button>
+                <div *ngFor="let review of allReviews">
+                    <table>
+                        <tr>
+                            <td>{{ review.review_message }}</td>
+                        </tr>
+                    </table>
+                    <button class="mt-1 mb-3 btn btn-danger" type="submit">Delete Review</button>
                 </div>
             </div>
         </div>
