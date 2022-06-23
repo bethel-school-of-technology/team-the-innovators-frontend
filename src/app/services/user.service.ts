@@ -51,7 +51,7 @@ export class UserService {
       return this.http.get(this.myUserURL+"/admin/users", {headers: myHeaders });
   }
 
-  //server request to admin view all users route
+  //server request to admin view all reviews route
 
   allReviews(): Observable<any> {
     let myHeaders = {
@@ -59,5 +59,23 @@ export class UserService {
     }
       return this.http.get(this.myUserURL+"/admin/reviews", {headers: myHeaders });
   }
+
+  //server request to admin delete user by id route
+
+  deleteUser(deletedUserId: number): Observable<any> {
+    let myHeaders = {
+      Authorization: localStorage.getItem('hotspotsAppToken')
+    }
+      return this.http.delete(this.myUserURL+"/admin/users/" + deletedUserId, {headers: myHeaders });
+  }
+
+  //server request to admin delete review by id route
+
+    deleteReview(deletedReviewId: number): Observable<any> {
+      let myHeaders = {
+        Authorization: localStorage.getItem('hotspotsAppToken')
+      }
+        return this.http.delete(this.myUserURL+"/admin/reviews/" + deletedReviewId, {headers: myHeaders });
+    }
   
 }

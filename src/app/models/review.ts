@@ -1,5 +1,5 @@
 export class Review {
-    reviewId!: number;
+    reviewId: number;
     rating: number;
     review_message: string;
     deleted: boolean;
