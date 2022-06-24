@@ -11,6 +11,7 @@ export class UserService {
   constructor(private http: HttpClient) { }
   
   myUserURL: string = "http://localhost:3000/users"
+  myReviewURL: string = "http://localhost:3000/reviews"
 
   //create a user
   
@@ -57,7 +58,7 @@ export class UserService {
     let myHeaders = {
       Authorization: localStorage.getItem('hotspotsAppToken')
     }
-      return this.http.get(this.myUserURL+"/admin/reviews", {headers: myHeaders });
+      return this.http.get(this.myReviewURL+"/admin/reviews", {headers: myHeaders });
   }
 
   //server request to admin delete user by id route
@@ -75,7 +76,7 @@ export class UserService {
       let myHeaders = {
         Authorization: localStorage.getItem('hotspotsAppToken')
       }
-        return this.http.delete(this.myUserURL+"/admin/reviews/" + deletedReviewId, {headers: myHeaders });
+        return this.http.delete(this.myReviewURL+"/admin/reviews/" + deletedReviewId, {headers: myHeaders });
     }
   
 }
