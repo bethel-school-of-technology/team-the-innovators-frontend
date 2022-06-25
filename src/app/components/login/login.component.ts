@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     this.UserService.loginUser(this.loginForm.username, this.loginForm.password).subscribe(myResponseObject => {
       console.log(myResponseObject);
       if(myResponseObject.status === 200){
-        window.alert(myResponseObject.message);
+        // window.alert(myResponseObject.message);
         localStorage.setItem('hotspotsAppToken', myResponseObject.token);
         console.log(myResponseObject.token);
         this.Router.navigate(['/profile']);
