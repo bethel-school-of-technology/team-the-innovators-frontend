@@ -1,0 +1,10 @@
+{
+    "places": [
+        {
+            "place_id": 1,
+            "place_name": "Jimmy's Pizza",
+            "place_location": "123 st NYC",
+            "place_phonenumber": 123456789,
+            "place_category": "Restuarant"}
+    ]
+}
