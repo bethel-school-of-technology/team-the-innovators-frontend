@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { UserService } from './services/user.service';
 import { AdminComponent } from './components/admin/admin.component';
 import { ResultComponent } from './components/result/result.component';
+import { EditReviewComponent } from './components/edit-review/edit-review.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ResultComponent } from './components/result/result.component';
     AccountComponent,
     NavbarComponent,
     AdminComponent,
-    ResultComponent
+    ResultComponent,
+    EditReviewComponent
   ],
   imports: [
     BrowserModule,

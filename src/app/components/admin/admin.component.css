@@ -9,10 +9,27 @@
 }
 
 .account-con {
-    margin: 10px;
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-bottom: 25px;
 }
 
 .col-sm {
     margin-top: 25px;
     margin-left: 25px;
 }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

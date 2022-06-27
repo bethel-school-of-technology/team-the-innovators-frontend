@@ -6,6 +6,8 @@ import { AccountComponent } from './components/account/account.component';
 import { LoginComponent } from './components/login/login.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { ResultComponent } from './components/result/result.component';
+import { EditReviewComponent } from './components/edit-review/edit-review.component';
+
 
 const routes: Routes = [
   { path: "hotspots", component: HomeComponent},
@@ -19,7 +21,9 @@ const routes: Routes = [
   // localhost:4200/admin
   { path: "admin", component: AdminComponent },
   // localhost:4200/places/:place_id
-  { path: "places/:place_id", component: ResultComponent }
+  { path: "places/:place_id", component: ResultComponent },
+  // localhost:4200/editReview
+  { path: "editReview/:id", component: EditReviewComponent}
 ]
 
 @NgModule({
