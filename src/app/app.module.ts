@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { UserService } from './services/user.service';
 import { AdminComponent } from './components/admin/admin.component';
+import { ResultComponent } from './components/result/result.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AdminComponent } from './components/admin/admin.component';
     LoginComponent,
     AccountComponent,
     NavbarComponent,
-    AdminComponent
+    AdminComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
