@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="editReview-sub-cotainer">
+            <div class="card">
+                <div class="mb-3 text-center">
+                    <h1>Edit Review</h1>
+                </div>
+                <form (ngSubmit) = "editReviewButton()">
+                    <div class="mb-3">
+                        <label for="rating">Rating:</label>
+                        <input type="number" class="form-control mt-1" id="rating" placeholder="{{ editedReview.rating }}" name="rating" [(ngModel)] = "editedReview.rating" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="review_message">Review:</label>
+                        <textarea type="text" class="form-control mt-1" id="review_message" name="review_message" [(ngModel)] = "editedReview.review_message">{{ editedReview.review_message }}</textarea>
+                    </div>
+                    <button class="mb-3 btn btn-warning" type="submit">Submit</button>
+                </form>
+            </div>
+    </div>
+</div>
