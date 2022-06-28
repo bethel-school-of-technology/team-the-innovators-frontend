@@ -12,6 +12,10 @@
   background-image: linear-gradient(to bottom right, #347deb, whitesmoke);
 }
 
+.searchResult {
+  color: black
+}
+
 a {
   color: white;
   background-color: transparent;
