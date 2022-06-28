@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginForm = {
-    username: "",
-    password: ""
+    Username: "",
+    Password: ""
   }
 
   constructor(private UserService: UserService, private Router: Router) { }
@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     console.log(this.loginForm);
-    this.UserService.loginUser(this.loginForm.username, this.loginForm.password).subscribe(myResponseObject => {
+    this.UserService.loginUser(this.loginForm.Username, this.loginForm.Password).subscribe(myResponseObject => {
       console.log(myResponseObject);
       if(myResponseObject.status === 200){
         // window.alert(myResponseObject.message);
