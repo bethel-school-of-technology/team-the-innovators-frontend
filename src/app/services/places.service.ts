@@ -1,3 +1,4 @@
+import { query } from '@angular/animations';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -30,6 +31,13 @@ export class PlacesService {
     }
     return this.http.get<Places>(`${this.myPlacesURL}/${reqId}`, {headers: myHeaders });
   };
+
+  searchPlace(reqQuery: string): Observable<any> {
+    let myHeaders = {
+      Authorization: localStorage.getItem('hotspotsAppToken')
+    }
+    return this.http.get(`${this.myPlacesURL}/search/${reqQuery}`, {headers: myHeaders });
+  }; 
 
 
   // getResult(reqId: number): Observable<any> {
