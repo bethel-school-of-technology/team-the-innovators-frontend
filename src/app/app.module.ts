@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { UserService } from './services/user.service';
 import { AdminComponent } from './components/admin/admin.component';
+import { ResultComponent } from './components/result/result.component';
 import { EditReviewComponent } from './components/edit-review/edit-review.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { EditReviewComponent } from './components/edit-review/edit-review.compon
     AccountComponent,
     NavbarComponent,
     AdminComponent,
+    ResultComponent,
     EditReviewComponent
   ],
   imports: [
