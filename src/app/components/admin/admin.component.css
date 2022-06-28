@@ -9,15 +9,9 @@
 }
 
 .account-con {
-  margin-top: 20px;
-  margin-right: 25px;
-  margin-bottom: 25px;
+  margin: 20px
 }
 
-.col-sm {
-    margin-top: 25px;
-    margin-left: 25px;
-}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -27,9 +21,15 @@ table {
   td, th {
     border: 1px solid black;
     text-align: left;
-    padding: 8px;
+    padding: 4px;
   }
   
   tr:nth-child(even) {
     background-color: #dddddd;
+  }
+
+  #responsive {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
   }
