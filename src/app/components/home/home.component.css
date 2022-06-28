@@ -1,22 +1,10 @@
-body {
-  background-image: url(https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  height: 800px;
-  /* You must set a specified height */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-}
-
 .card {
   color: white;
   border: none;
 
   width: 500px;
 
-  padding: 40px;
+  padding: 30px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -34,4 +22,44 @@ a:hover {
   color: black;
   background-color: transparent;
   text-decoration: none;
+}
+
+#responsive {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}
+
+
+ /* Phone */
+ @media screen and (min-device-width: 1px) and (max-device-width: 736px) {
+  body{
+    background-image: url(https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 860px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Tablet */
+@media screen and (min-device-width: 737px) and (max-device-width: 1024px) {
+  body{
+    background-image: url(https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 1100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Laptop */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1600px) {
+  body{
+    background-image: url(https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
