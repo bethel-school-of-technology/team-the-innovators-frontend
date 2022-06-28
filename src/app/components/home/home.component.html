@@ -4,9 +4,14 @@
             <h1>Welcome to Hotspots!</h1>
             <br>
             <h3>Explore New York City:</h3>
-            <input type="text" class="form-control" placeholder="Restaurant, Bar, Park, Museum, etc." name="hotspotsearch">
-            <br>
-            <button class="mb-3 btn btn-primary" type="submit">Search</button>
+            <input class="form-control" type="search" id="searchQuery"  name="searchQuery" [(ngModel)]="searchQuery"  placeholder="Search for places.." title="Type in a name">
+            <button class="btn btn-primary" type="button" (click)="search()">Search</button>
+
+            <div>
+<ul id="myUL" *ngFor="let place of searchedPlaces" class="list-group list-group-flush">
+  <li class="list-group-item"><a class="searchResult" href="http://localhost:4200/places/{{place.place_id}}">{{place.place_name}} | {{place.place_location}}</a></li>
+</ul>
+</div>
             <br>
             <br>
             <div>Already a user? Login <a routerLink="/login">here</a></div>
@@ -14,3 +19,5 @@
         </div>
     </div>
 </body>
+
+<!-- (keyup)="search()" -->
