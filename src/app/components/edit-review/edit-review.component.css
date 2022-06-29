@@ -11,3 +11,9 @@
     transform: translate(-50%, -50%);
     background-image: linear-gradient(to bottom right, #347deb, whitesmoke);
 }
+
+#responsive {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+  }

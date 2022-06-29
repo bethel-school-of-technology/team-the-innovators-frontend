@@ -23,3 +23,9 @@ a {
     background-color: transparent;
     text-decoration: none;
   }
+
+  #responsive {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+  }
