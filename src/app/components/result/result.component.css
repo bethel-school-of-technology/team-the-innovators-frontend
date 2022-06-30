@@ -1,8 +1,8 @@
 .account-con {
-    margin: 10px;
+    margin: 20px;
 }
 
-.col-sm {
-    margin-top: 25px;
-    margin-left: 25px;
+#map {
+    width: 50vw;
+    height: 50vh;
 }
