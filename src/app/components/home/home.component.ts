@@ -10,7 +10,6 @@ import { Places } from 'src/app/models/places';
 export class HomeComponent implements OnInit {
   searchedPlaces: any;
   public searchQuery: string;
-  UserService: any;
 
   constructor(private placeService: PlacesService) { }
 
@@ -24,6 +23,6 @@ export class HomeComponent implements OnInit {
     this.placeService.searchPlace(this.searchQuery).subscribe(Response => {
       this.searchedPlaces = Response;
     })
-  };
+  }
 
 }

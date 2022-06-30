@@ -107,6 +107,4 @@ export class UserService {
     return this.http.get(this.myReviewURL + "/review/" + editedReviewId, { headers: myHeaders });
   }
 
-
-
 }
