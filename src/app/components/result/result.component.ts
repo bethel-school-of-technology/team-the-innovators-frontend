@@ -16,22 +16,23 @@ export class ResultComponent implements OnInit {
   constructor(private actRoute: ActivatedRoute, private myPlacesService: PlacesService) { }
 
   ngOnInit(): void {
-this.actRoute.params.subscribe(params => {
-  this.place_id = +params["place_id"]
-})
+    this.actRoute.params.subscribe(params => {
+      this.place_id = +params["place_id"]
+    })
 
-this.myPlacesService.getResult({ reqId: this.place_id }).subscribe(Response => {
-  this.currentPlace = Response;
-})
+    this.myPlacesService.getResult({ reqId: this.place_id }).subscribe(Response => {
+      this.currentPlace = Response;
+    })
 
     this.place_id = parseInt(this.actRoute.snapshot.paramMap.get("place_id"));
     console.log(this.place_id)
   }
 
-  seeResult(){
+  seeResult() {
     this.myPlacesService.getResult({ reqId: this.place_id }).subscribe(response => {
       console.log(response)
     })
   }
-  }
+
+}
 
