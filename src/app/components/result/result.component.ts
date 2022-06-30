@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Places } from 'src/app/models/places';
 import { PlacesService } from 'src/app/services/places.service';
+import { Review } from 'src/app/models/review';
 
 @Component({
   selector: 'app-result',
@@ -12,6 +13,9 @@ export class ResultComponent implements OnInit {
 
   currentPlace: Places = new Places();
   place_id: number;
+  UserService: any;
+  public placeReview: Review[] = [];
+  placePlaceId: number;
 
   constructor(private actRoute: ActivatedRoute, private myPlacesService: PlacesService) { }
 
@@ -25,13 +29,30 @@ this.myPlacesService.getResult({ reqId: this.place_id }).subscribe(Response => {
 })
 
     this.place_id = parseInt(this.actRoute.snapshot.paramMap.get("place_id"));
-    console.log(this.place_id)
+    console.log(this.place_id);
+
+    //reviews by place
+    this.myPlacesService.placeReview(this.place_id).subscribe(myResponseObject => {
+      console.log(myResponseObject);
+      this.placeReview = myResponseObject.reviews;
+      console.log(this.placeReview);
+    })
+
   }
 
   seeResult(){
     this.myPlacesService.getResult({ reqId: this.place_id }).subscribe(response => {
       console.log(response)
     })
-  }
+  };
+
+  seeReviews() {
+    this.UserService.userReviews().subscribe(myResponseObject => {
+      console.log(myResponseObject);
+      this.seeReviews = myResponseObject.reviews;
+      console.log(this.seeReviews);
+    })
+  };
+  
   }
 

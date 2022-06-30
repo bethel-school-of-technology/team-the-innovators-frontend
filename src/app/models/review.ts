@@ -1,8 +1,10 @@
 export class Review {
     reviewId: number;
     rating: number;
+    placePlaceId: number;
     review_message: string;
     deleted: boolean;
+  reviews: Review[];
 
 
     constructor() {
