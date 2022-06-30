@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Places } from '../models/places';
+import { Review } from '../models/review';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,7 @@ export class PlacesService {
   constructor(private http: HttpClient) { }
 
   myPlacesURL: string = "http://localhost:3000/places"
+  myReviewURL: string = "http://localhost:3000/reviews"
 
   // search all places
   getAllResults (): Observable<Places[]>{
@@ -39,6 +41,13 @@ export class PlacesService {
     return this.http.get(`${this.myPlacesURL}/search/${reqQuery}`, {headers: myHeaders });
   }; 
 
+//server request to get reviews by place id
+placeReview(reqId: number): Observable<any> {
+  let myHeaders = {
+    Authorization: localStorage.getItem('hotspotsAppToken')
+  }
+  return this.http.get(`${this.myReviewURL}/place/${reqId}`, { headers: myHeaders });
+}
 
   // getResult(reqId: number): Observable<any> {
   //   let myHeaders = {
