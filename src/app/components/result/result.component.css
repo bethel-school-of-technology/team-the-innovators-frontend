@@ -1,8 +1,8 @@
-.account-con {
+.container-result {
     margin: 10px;
 }
 
-.col-sm {
-    margin-top: 25px;
-    margin-left: 25px;
-}
+#map {
+    width: 32vw;
+    height: 45vh;
+} 
