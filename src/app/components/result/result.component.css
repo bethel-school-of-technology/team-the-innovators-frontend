@@ -6,3 +6,9 @@
     width: 32vw;
     height: 45vh;
 } 
+
+.responsive {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+  }

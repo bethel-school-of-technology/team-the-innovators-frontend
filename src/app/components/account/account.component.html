@@ -15,7 +15,7 @@
                 <div *ngFor="let review of userReviews">
                     <div>
                         <p>Rating: {{ review.rating }}</p>
-                        <p>Body: {{ review.review_message }}</p>
+                        <p>{{ review.review_message }}</p>
                     </div>
                     <div>
                         <a routerLink="/editReview/{{ review.reviewId }}">

@@ -1,23 +1,24 @@
-<div class="container-result" id="responsive">
+<div class="container-result">
     <div class="row account-row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 responsive">
             <div class="mt-3 mb-3">Hotspot: {{ currentPlace.place_name }} </div>
             <div class="mt-3 mb-3">Address: {{ currentPlace.place_location }} </div>
             <div class="mt-3 mb-3">Phone Number: {{ currentPlace.place_phonenumber }} </div>
             <div class="mt-3 mb-3">Category: {{ currentPlace.place_category }} </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 responsive">
             <div id="myReviews">
                 <h4>Reviews: </h4>
                 <div *ngFor="let review of placeReview">
                     <div>
                         <p>Rating: {{ review.rating }}</p>
-                        <p>Review: {{ review.review_message }}</p>
+                        <p>{{ review.review_message }}</p>
+                        <hr>
                     </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 responsive">
         <div class="map" id="map"></div>
     </div>
 </div>
