@@ -47,13 +47,14 @@ placeReview(reqId: number): Observable<any> {
     Authorization: localStorage.getItem('hotspotsAppToken')
   }
   return this.http.get(`${this.myReviewURL}/place/${reqId}`, { headers: myHeaders });
-}
+};
 
-  // getResult(reqId: number): Observable<any> {
-  //   let myHeaders = {
-  //     Authorization: localStorage.getItem('hotspotsAppToken')
-  //   }
-  //     return this.http.get(this.myPlacesURL+"/result/"+reqId, {headers: myHeaders });
-  // }
+//create review
+createReview(newReview: Review, place_id: number): Observable<any> {
+  let myHeaders = {
+    Authorization: localStorage.getItem('hotspotsAppToken')
+  }
+  return this.http.post(`${this.myReviewURL}/createReview/${place_id}`, newReview, { headers: myHeaders });
+}
 
 }
