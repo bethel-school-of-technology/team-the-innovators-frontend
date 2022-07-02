@@ -73,9 +73,9 @@ export class ResultComponent implements OnInit {
   };
   
   createNew(){
-    this.myPlacesService.createReview(this.newReview).subscribe(response => {
+    this.myPlacesService.createReview(this.newReview, this.place_id).subscribe(response => {
       console.log(response)
-      this.router.navigate(["login"])
+      this.router.navigate(["hotspots"])
     })
   }
 

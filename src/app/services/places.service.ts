@@ -50,8 +50,11 @@ placeReview(reqId: number): Observable<any> {
 };
 
 //create review
-createReview(newReview: Review): Observable<any> {
-  return this.http.post(`${this.myReviewURL}/createReview`, newReview);
+createReview(newReview: Review, place_id: number): Observable<any> {
+  let myHeaders = {
+    Authorization: localStorage.getItem('hotspotsAppToken')
+  }
+  return this.http.post(`${this.myReviewURL}/createReview/${place_id}`, newReview, { headers: myHeaders });
 }
 
 }
